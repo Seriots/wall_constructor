@@ -47,7 +47,7 @@ void	convert_indoor_map(char **map, int x, int y, int max_y)
 * outdoor map: border tiles are straight line.
 * indoor map: border tiles are considering wall everywhere outside the map.
 */
-void	make_wall(char **map, int max_y,
+void	wall_constructor(char **map, int max_y,
 					void (*convert_function)(char **, int, int, int))
 {
 	int	x;
